@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    width: 90%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 3px solid aqua;
+    &_item {
+        width: 32%;
+        min-height: 100px;
+        margin-bottom: 30px;
+        background-color: red; 
+        border: 1px solid green  
+     
+    }
+}
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid lightgreen;
+    gap: 30px;
+    &_item {
+        min-height: 100px;
+        background-color: fuchsia; 
+        border: 1px solid salmon   
+    }
+}
